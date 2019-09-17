@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ListViewTest.MainPage">
+
+    <ListView x:Name="LV"
+              SeparatorVisibility="None"
+                          Margin="0,15,0,0"
+                          SelectionMode="Single"
+                          RowHeight="64"
+                          IsEnabled="True">
+        <ListView.Header>
+                <StackLayout
+                    Orientation="Vertical"
+                    Spacing="0"
+                    HeightRequest="30">
+                    <Label Text="A Header"
+                        Margin="15,0,15,10">
+                    </Label>
+                </StackLayout>
+        </ListView.Header>
+    </ListView>
+</ContentPage>
